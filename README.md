@@ -35,10 +35,10 @@ The cpsam model can be downloaded from: https://huggingface.co/mouseland/cellpos
 ### Analysis
 If the preprocessing and segmentation have been performed with the [nf-core version of sopa](https://nf-co.re/sopa/dev/),
 the SpatialData out folder in zarr format can be opened and the analysis started from here.
-1) Produces an expression table withou DAPI for the clustering
+1) Produces an expression table withou DAPI for the UMAP plotting
 2) Generate a NN neighbour grap and the UMAP embeddings
-3) Perform Leiden clustering
-4) Plots:
+3) Assign the cells to specific celltypes using manual thresholds
+5) Plots:
     - UMAPs 
     - Violinplot
     - Dotplot
